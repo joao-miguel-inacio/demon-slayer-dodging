@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+<body>
+    <!--screen 1-->
+    <div id="game-intro">
+        <img id = "mask" src="./assets/images/wallpaperflare.com_wallpaper.jpg" alt="mask">
+        <h1>Demon Slayer Dodging!</h1>
+        <div class="container-of-containers">
+            <div class = "left-half">
+                <h2 class="intro">Welcome to the Demon Slayers Corps!</h2>
+                <p>Use Arrow Keys or W, A, S or D to move Tanjiro. <br> Avoid Gyutaro's Flying Blood Sickles. <br> Find an opening thread <br> and press the SpaceBar to attack! </p>
+                <button id="start-button">滅</button>
+            </div>
+            <div class = "right-half">
+                <img src="./assets/images/Gyutaro_chases_Tanjiro_down.webp" alt="Gyutaro_chases_Tanjiro_down">
+            </div>
+        </div>
+    </div>
+    <!--screen 2-->
+    <div id="game-board" class="hidden">
+        <header id="canvas-header">
+            <div id="player-life-points-container">
+                <img id="player-life1-filled"src="./assets/images/player-life-point.png" alt="" class="">
+                <img id="player-life1-lost"src="./assets/images/player-life-lost.png" alt="" class="hidden">
+                <img id="player-life2-filled"src="./assets/images/player-life-point.png" alt="" class="">
+                <img id="player-life2-lost"src="./assets/images/player-life-lost.png" alt="" class="hidden">
+                <img id="player-life3-filled"src="./assets/images/player-life-point.png" alt=""class="">
+                <img id="player-life3-lost"src="./assets/images/player-life-lost.png" alt="" class="hidden">
+            </div>
+            <div id="enemy-life-points-container">
+                <img id="enemy-life1-filled"src="./assets/images/enemy-life-point.png" alt="" class="">
+                <img id="enemy-life1-lost"src="./assets/images/enemy-life-lost.png" alt="" class="hidden">
+                <img id="enemy-life2-filled"src="./assets/images/enemy-life-point.png" alt="" class="">
+                <img id="enemy-life2-lost"src="./assets/images/enemy-life-lost.png" alt="" class="hidden">
+                <img id="enemy-life3-filled"src="./assets/images/enemy-life-point.png" alt=""class="">
+                <img id="enemy-life3-lost"src="./assets/images/enemy-life-lost.png" alt="" class="hidden">
+            </div>
+        </header>
+        <canvas id="canvas" width = "body.width" height = "640px" ctx="2D"></canvas>
+    </div>
+    <!--screen 3-->  
+    <div id="game-lost" class = "hidden">
+        <h1 id="lost-game-text">Time to use your <br> Recovery Breathing Technique.</h1>
+        <button id="try-again-button">Try again!</button>
+        <button id="regroup">Regroup!</button>
+    </div>
+    <!--screen 4-->
+    <div id="game-won" class = "hidden">
+        <h1 id="won-game-text">Wow! You defeated one of the Twelve Kizuki. <br> Watch the replay of your fight below!</h1>
+        <iframe id="fight-replay" src="https://player.vimeo.com/video/695067265?controls=0?h=d32aceaea1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="720" height="405" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="4:29 min of pure awesomeness"></iframe>
+        <button id="back-to-start">Tend to your wounds!</button>
+        <button id="slay-again-button">Slay again!</button> 
+    </div>
+    <!--always displayed and functional-->
+    <footer id = "footer">
+        <button id="musicButtonOn" class = "hidden musicButton"><img class="music-img" src="./assets/images/sound-button-on.png" alt=""></button>
+        <button id="musicButtonOff" class = "musicButton"><img class="music-img" src="./assets/images/sound-button-mute.png" alt=""></button>
+        <a href="https://github.com/joaoMiguelInacio">myGitHub</a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-in%C3%A1cio-126174219/">myLinkedin</a>
+        <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Tanjiro_Kamado">Tanjiro</a>
+        <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Gyutaro">Gyutaro</a>
+        <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Blood_Demon_Art/Demonstrations#Gyutaro">The Flying Blood Sickles</a>
+        <a href="https://www.google.com/search?q=opening+thread+tanjiro&rlz=1C1VDKB_en-GBGB990GB990&sxsrf=APq-WBtN6gLdvHmRAJkcyUpWRnrfKHG2cg%3A1648766812370&ei=XC9GYs6TFsv4gQa2x7X4Ag&ved=0ahUKEwjOsayBt_H2AhVLfMAKHbZjDS8Q4dUDCA4&uact=5&oq=opening+thread+tanjiro&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBggAEBYQHjoHCAAQRxCwAzoECAAQQzoFCAAQgAQ6BQgAEJECSgQIQRgASgQIRhgAUJu2BljkvwZglMIGaAJwAHgAgAFIiAGbBJIBATmYAQCgAQHIAQjAAQE&sclient=gws-wiz">The Opening Thread</a>
+        <a href="https://www.google.com/search?q=metsu+meaning&rlz=1C1VDKB_en-GBGB990GB990&sxsrf=APq-WBu8r9PHc3HtEDbfMaeYeqSpXcdkPg%3A1648766302648&ei=Xi1GYvecJ5G8gQbL07HAAQ&ved=0ahUKEwj3w6WOtfH2AhURXsAKHctpDBgQ4dUDCA4&uact=5&oq=metsu+meaning&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyCggAEIAEEIcCEBQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMggIABAWEAoQHjoECCMQJzoHCC4Q1AIQQzoFCAAQkQI6FAguEIAEELEDEIMBEMcBENEDENQCOgQILhBDOgoIABCxAxCDARBDOggIABCxAxCDAToKCC4QsQMQgwEQQzoLCAAQgAQQsQMQgwE6CwguEIAEEMcBENEDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQrwE6CAguEIAEENQCOgUILhCABDoHCC4QgAQQCkoECEEYAEoECEYYAFAAWNEPYM0QaABwAXgAgAGpAYgB2QiSAQQxMS4ymAEAoAEBwAEB&sclient=gws-wiz">滅</a>
+    </footer>
+    <script type="text/javascript" src="./javascript/sound-button.js"></script>
+    <script type="text/javascript" src="./javascript/player.js"></script>
+    <script type="text/javascript" src="./javascript/player-moves.js"></script>
+    <script type="text/javascript" src="./javascript/player-attack.js"></script>
+    <script type="text/javascript" src="./javascript/enemy.js"></script>
+    <script type="text/javascript" src="./javascript/enemy-attacks.js"></script>
+    <script type="text/javascript" src="./javascript/obstacles.js"></script> 
+    <script type="text/javascript" src="./javascript/background.js"></script>   
+    <script type="text/javascript" src="./javascript/enemy-life-points.js"></script> 
+    <script type="text/javascript" src="./javascript/player-life-points.js"></script> 
+    <script type="text/javascript" src="./javascript/increase-difficulty.js"></script> 
+    <script type="text/javascript" src="./javascript/index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Hiromisake';
+    src: url(/assets/fonts/HIROMISAKE.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    height: 100%;
+    width: 100%;  
+}
+
+#mask {
+    position: absolute;
+    height: 200px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    padding: 5%;
+    font-family: "Hiromisake" ;
+    color: aliceblue;
+    text-align: center;
+    font-size: 74px;
+}
+
+#start-button,
+#try-again-button,
+#slay-again-button,
+#back-to-start,
+#regroup {
+    font-family: "Hiromisake" ;
+    color: aliceblue;
+    font-size: 28px;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(151, 16, 16);
+    padding: 3.1px 0 3.1px 0;
+    border-color: rgba(151, 16, 16, 0.7)
+}
+
+.container-of-containers{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+    width: 100%;
+}
+
+.left-half {
+    font-family: "Hiromisake" ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.right-half {
+    display: flex;
+    width: 30%;
+}
+
+.right-half img{
+    display: block;
+    max-width:100%;
+    width: auto;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    height: 5%;
+    width: 100%;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+.music-img,
+.github-img {
+    height: 90%;
+}
+
+footer a{
+    color: rgb(151, 16, 16);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer > button {
+    height: 100%;
+    border: 0;
+}
+
+header{
+    height: 5%;
+    display: flex;
+    gap: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-life1-filled,
+#player-life2-filled,
+#player-life3-filled,
+#player-life1-lost,
+#player-life2-lost,
+#player-life3-lost,
+#enemy-life1-filled,
+#enemy-life2-filled,
+#enemy-life3-filled,
+#enemy-life1-lost,
+#enemy-life2-lost,
+#enemy-life3-lost {
+    height: 40px;
+}
+
+.hidden{
+    display: none;
+}
