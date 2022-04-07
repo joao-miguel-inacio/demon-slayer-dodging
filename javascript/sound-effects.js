@@ -2,7 +2,7 @@ let music,
     attackMusic = new Audio('./assets/music/Attack.mp3');
 
 function playFirstScreenMusic(){
-    music = new Audio ('/assets/music/Start.mp3');
+    music = new Audio ('./assets/music/Start.mp3');
     let playPromise = music.play();
     music.volume = 0.1;
 
@@ -20,7 +20,7 @@ function playFirstScreenMusic(){
 
 function playFightScreenMusic(){    
     pauseMusic();
-    music = new Audio('/assets/music/Fight.mp3');
+    music = new Audio('./assets/music/Fight.mp3');
     music.volume = 0.1;
     playMusic();
 }
