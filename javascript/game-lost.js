@@ -10,6 +10,5 @@ function gameLost(){
     lostGameText.style.fontSize = "48px";
     tryAgainButton.addEventListener('click', startGame );
 
-    //let backToStart = () => location.reload();
     regroupButton.addEventListener('click', backToStart );
 }

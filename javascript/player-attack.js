@@ -4,7 +4,7 @@ function backToOrignalStance() {
 
 function playerAttacksForNothing () {
     document.addEventListener('keydown', (e) => {
-        if (e.key === " "){
+        if (e.key === " " && gameBoardElement.classList.contains("hidden") === false){
             e.preventDefault();
             AttackMusic();
             player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
@@ -36,6 +36,7 @@ function playerAttacksSuccessfully(){
                         footerElement.style.backgroundColor = "whitesmoke";
                         headerElement.style.backgroundColor = "whitesmoke";
                         setTimeout(function() {        
+                            enemy.clearY();
                             gameWon();
                         }, 200);    
                     }, 200);

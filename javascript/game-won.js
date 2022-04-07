@@ -1,6 +1,5 @@
 function gameWon(){
     pauseMusic();
-    attackMusic.pause();
     gameBoardElement.classList.add("hidden");
     gameWonElement.classList.remove("hidden");
     reset();

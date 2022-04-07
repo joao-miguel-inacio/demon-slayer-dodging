@@ -8,13 +8,14 @@ let intervalId,
     obstacles,
     obstacles1,
     obstacles2,
+    obstacles3,
     obstaclesArray = [],
-    frameCounter = 0,
-    playerLifesArray = [1,2,3,4],
-    enemyLifesArray = [1,2,3,4],
     difficulty1Array = [],
     difficulty2Array = [],
     difficulty3Array= [],
+    playerLifesArray = [1,2,3,4],
+    enemyLifesArray = [1,2,3,4],
+    frameCounter = 0,
     gameIntroElement =  document.getElementById("game-intro"),
     gameBoardElement = document.getElementById("game-board"),
     headerElement = document.getElementById("canvas-header"),
@@ -50,9 +51,9 @@ startButton.addEventListener('click', startGame);
 function startGame(){
     playFightScreenMusic();
     gameIntroElement.classList.add("hidden");
+    gameBoardElement.classList.remove("hidden");
     gameWonElement.classList.add("hidden");
     gameLostElement.classList.add("hidden");
-    refillLifePoints();
     ctx = canvas.getContext("2d");
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height  = window.innerHeight*0.9;
@@ -65,20 +66,22 @@ function startGame(){
     obstacles1 = new Obstacles1 (canvas,ctx);
     obstacles2 = new Obstacles2 (canvas,ctx);
     obstacles3 = new Obstacles3 (canvas,ctx);
+    
+    refillLifePoints();
     playerMoves();
     playerRests ();
+    update ();  
     playerAttacksForNothing ();
-    update ();   
 }
 
-function update (){
+function update (){ 
     intervalId = setInterval (()=>{
         frameCounter ++;
         background.draw ();
         player.draw ();
-        enemy.draw();
+        enemy.draw ();
         //testing
-        if (frameCounter % 300=== 0){
+        if (frameCounter % 30=== 0){
         //game
         //if (frameCounter % 30=== 0){
             obstaclesArray.push(new Obstacles(canvas, ctx));
@@ -115,7 +118,10 @@ function update (){
             } else if(attackSuffered && playerLifesArray.length === 2){
                 enemyAttacksSuccessfully3 ();
                 } else if(attackSuffered && playerLifesArray.length === 1){
-                gameLost ();        
+                    console.log(enemy.movingInterval);
+                    enemy.clearY();
+                    console.log(enemy.movingInterval);
+                    gameLost ();        
             }
         });
         if ((player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
