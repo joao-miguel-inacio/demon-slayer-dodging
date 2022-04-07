@@ -1,5 +1,5 @@
 function playerMoves() {
-    document.addEventListener("keydown", (e) => {
+    document.onkeydown =  (e) => {
         switch (e.key) { 
             case "ArrowDown": 
             case "s":
@@ -24,11 +24,11 @@ function playerMoves() {
             default:
                 break;
         }
-    });
+    };
 }
 
 function playerRests (){
-    document.addEventListener('keyup', (e) => {
+    document.onkeyup = (e) => {
         switch (e.key) { 
             case "ArrowDown": 
             case "s":
@@ -57,6 +57,5 @@ function playerRests (){
             default:
                 break;
             }
-        });
+        };
     }
-    

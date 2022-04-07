@@ -106,12 +106,19 @@ footer > button {
     border: 0;
 }
 
-header{
+#canvas-header{
+    background-color: whitesmoke;
     height: 5%;
     display: flex;
-    gap: 60%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+#levels-container p{
+    font-size: 24px;
+    font-family: "Hiromisake";
+    color: rgb(151, 16, 16);
 }
 
 #player-life1-filled,

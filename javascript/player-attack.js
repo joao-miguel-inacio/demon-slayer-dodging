@@ -19,8 +19,6 @@ function playerAttacksForNothing () {
     });
 }
 
-//let H+F = header and footer
-
 function playerAttacksSuccessfully(){
     if (enemyLifesArray.length===1){
         document.addEventListener('keydown', (e) => {
@@ -36,7 +34,6 @@ function playerAttacksSuccessfully(){
                         footerElement.style.backgroundColor = "whitesmoke";
                         headerElement.style.backgroundColor = "whitesmoke";
                         setTimeout(function() {        
-                            enemy.clearY();
                             gameWon();
                         }, 200);    
                     }, 200);

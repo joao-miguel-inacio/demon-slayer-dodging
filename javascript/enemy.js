@@ -10,7 +10,6 @@ class Enemy {
 		this.x = (this.canvas.width - this.width - 10);
         this.movingInterval = null;
         this.init();
-        this.move();
     }
 
     init(){
@@ -19,14 +18,7 @@ class Enemy {
     }
 
     move(){
-        this.movingInterval = setInterval(()=>{
-                    this.y = Math.floor(Math.random()*(this.canvas.height - this.height));
-                    }, 1000/2);
-    }
-
-    clearY(){
-        console.log(this.movingInterval)
-        clearInterval(this.movingInterval);
+        this.y = Math.floor(Math.random()*(this.canvas.height - this.height));
     }
 
     draw(){

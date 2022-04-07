@@ -39,11 +39,11 @@ let intervalId,
     enemyLostLife1 = document.getElementById("enemy-life1-lost"),
     enemyLostLife2 = document.getElementById("enemy-life2-lost"),
     enemyLostLife3 = document.getElementById("enemy-life3-lost"),
+    leveltxt= document.getElementById("levels"),
     lostGameText = document.getElementById("lost-game-text"),
     wonGameText = document.getElementById("won-game-text"),
     video = document.getElementById("fight-replay");
 
-//Reloads the page, taking the player back to 1st screen to see instructions again
 let backToStart = () => location.reload();    
 
 startButton.addEventListener('click', startGame);
@@ -80,28 +80,18 @@ function update (){
         background.draw ();
         player.draw ();
         enemy.draw ();
-        //testing
+        
         if (frameCounter % 30=== 0){
-        //game
-        //if (frameCounter % 30=== 0){
+            enemy.move ();
             obstaclesArray.push(new Obstacles(canvas, ctx));
         }        
-        //testing
-        if (frameCounter % 700=== 0){
-        //game
-        //if (frameCounter % 70 === 0 && difficulty1Array.length >= 1){
+        if (frameCounter % 70 === 0 && difficulty1Array.length >= 1){
             obstaclesArray.push(new Obstacles1(canvas, ctx));
         }
-        //testing
-        if (frameCounter % 1600=== 0){
-        //game
-        //if (frameCounter % 160 === 0 && difficulty2Array.length >= 1){
+        if (frameCounter % 160 === 0 && difficulty2Array.length >= 1){
             obstaclesArray.push(new Obstacles2(canvas, ctx));
         }
-        //testing
-        if (frameCounter % 3400=== 0){
-        //game
-        //if (frameCounter % 340 === 0 && difficulty3Array.length >= 1){
+        if (frameCounter % 340 === 0 && difficulty3Array.length >= 1){
             obstaclesArray.push(new Obstacles3(canvas, ctx));
             frameCounter = 0;
         }
@@ -118,9 +108,6 @@ function update (){
             } else if(attackSuffered && playerLifesArray.length === 2){
                 enemyAttacksSuccessfully3 ();
                 } else if(attackSuffered && playerLifesArray.length === 1){
-                    console.log(enemy.movingInterval);
-                    enemy.clearY();
-                    console.log(enemy.movingInterval);
                     gameLost ();        
             }
         });

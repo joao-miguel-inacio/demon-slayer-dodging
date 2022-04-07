@@ -1,8 +1,5 @@
 function reset(){
-    console.log("game reset");
-    console.log(intervalId)
     clearInterval(intervalId);
-    console.log(intervalId)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     background = null;
     player = null;

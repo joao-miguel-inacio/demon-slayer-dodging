@@ -3,10 +3,7 @@ class Player {
         this.canvas = canvas;
 		this.ctx = ctx;
 		this.image = null;
-        //testing
-        this.playerSpeed = 30;
-        //gameSpeed
-        //this.playerSpeed = 15;
+        this.playerSpeed = 15;
         this.width = 100;
 		this.height = 100;
         this.y = (this.canvas.height - this.height) / 2;
