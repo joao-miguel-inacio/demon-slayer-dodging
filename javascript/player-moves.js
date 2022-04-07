@@ -4,22 +4,22 @@ function playerMoves() {
             case "ArrowDown": 
             case "s":
                 e.preventDefault();
-                player.moveDown();
+                player?.moveDown();
                 break;
             case "ArrowUp":
             case "w":
                 e.preventDefault();
-                player.moveUp();
+                player?.moveUp();
                 break;
             case  "ArrowRight":  
             case "d":
                 e.preventDefault();
-                player.moveRight();
+                player?.moveRight();
                 break;
             case "ArrowLeft":
             case "a": 
                 e.preventDefault();
-                player.moveLeft();
+                player?.moveLeft();
                 break; 
             default:
                 break;
@@ -33,25 +33,25 @@ function playerRests (){
             case "ArrowDown": 
             case "s":
                 e.preventDefault();
-                player.moveDown();
+                player?.moveDown();
                 player.image.src = "./assets/images/TanjiroPosition0.png";
                 break;
             case "ArrowUp":
             case "w":
                 e.preventDefault();
-                player.moveUp();
+                player?.moveUp();
                 player.image.src = "./assets/images/TanjiroPosition0.png";
                 break;
             case  "ArrowRight":  
             case "d":
                 e.preventDefault();
-                player.moveRight();
+                player?.moveRight();
                 player.image.src = "./assets/images/TanjiroPosition0.png";
                 break;
             case "ArrowLeft":
             case "a": 
                 e.preventDefault();
-                player.moveLeft();
+                player?.moveLeft();
                 player.image.src = "./assets/images/TanjiroPosition0.png";
                 break;
             default:
