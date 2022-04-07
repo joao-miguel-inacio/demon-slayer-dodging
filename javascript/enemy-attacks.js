@@ -1,5 +1,4 @@
 function enemyAttacksSuccessfully1 () {    
-    playerLifesArray.splice(3,1);
     obstaclesArray = [];
     player.x = (10);
     playerLosingLife1();
@@ -14,7 +13,6 @@ function enemyAttacksSuccessfully1 () {
 }
 
 function enemyAttacksSuccessfully2 () {    
-    playerLifesArray.splice(2,1);
     obstaclesArray = [];
     player.x = (10);
     playerLosingLife2();
@@ -29,7 +27,6 @@ function enemyAttacksSuccessfully2 () {
 }
 
 function enemyAttacksSuccessfully3 (){
-    playerLifesArray.splice(1,1);
     obstaclesArray = [];
     player.x = (10);
     playerLosingLife3();
