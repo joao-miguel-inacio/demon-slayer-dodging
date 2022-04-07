@@ -13,7 +13,7 @@ class Player {
 
     init(){
         this.image = new Image();
-		this.image.src = "/assets/images/TanjiroPosition0.png";
+		this.image.src = "./assets/images/TanjiroPosition0.png";
     }
 
     draw(){
@@ -31,9 +31,9 @@ class Player {
 		if (this.x > 5) {
 			this.x -= this.playerSpeed;
             if (frameCounter % 4 ===0){
-            this.image.src = "/assets/images/TanjiroPosition1LEFT.png";
+            this.image.src = "./assets/images/TanjiroPosition1LEFT.png";
             } else {
-            this.image.src = "/assets/images/TanjiroPosition2LEFT.png";
+            this.image.src = "./assets/images/TanjiroPosition2LEFT.png";
             }
 		}
 	}
@@ -42,9 +42,9 @@ class Player {
 		if (this.x < (this.canvas.width - this.width - 15)) {
 			this.x += this.playerSpeed;
             if (frameCounter % 4 ===0){
-                this.image.src = "/assets/images/TanjiroPosition1RIGHT.png";
+                this.image.src = "./assets/images/TanjiroPosition1RIGHT.png";
                 } else {
-                this.image.src = "/assets/images/TanjiroPosition2RIGHT.png";
+                this.image.src = "./assets/images/TanjiroPosition2RIGHT.png";
                 }
 		}
 	}
@@ -53,9 +53,9 @@ class Player {
 		if (this.y > 5) {
 			this.y -= this.playerSpeed;
             if (frameCounter % 4 ===0){
-                this.image.src = "/assets/images/TanjiroPosition1UP.png";
+                this.image.src = "./assets/images/TanjiroPosition1UP.png";
                 } else {
-                this.image.src = "/assets/images/TanjiroPosition2UP.png";
+                this.image.src = "./assets/images/TanjiroPosition2UP.png";
                 }
 		}
 	}
@@ -64,9 +64,9 @@ class Player {
 		if (this.y < (this.canvas.height - this.height - 5)) {
 			this.y += this.playerSpeed;
             if (frameCounter % 4 ===0){
-                this.image.src = "/assets/images/TanjiroPosition1DOWN.png";
+                this.image.src = "./assets/images/TanjiroPosition1DOWN.png";
                 } else {
-                this.image.src = "/assets/images/TanjiroPosition2DOWN.png";
+                this.image.src = "./assets/images/TanjiroPosition2DOWN.png";
                 }
 		}
 	}
