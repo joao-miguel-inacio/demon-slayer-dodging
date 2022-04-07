@@ -53,9 +53,9 @@ class Player {
 		if (this.y > 5) {
 			this.y -= this.playerSpeed;
             if (frameCounter % 4 ===0){
-                this.image.src = "/assets/images/TanjiroPosition1UP.png";
+                this.image.src = "./assets/images/TanjiroPosition1UP.png";
                 } else {
-                this.image.src = "/assets/images/TanjiroPosition2UP.png";
+                this.image.src = "./assets/images/TanjiroPosition2UP.png";
                 }
 		}
 	}
@@ -64,9 +64,9 @@ class Player {
 		if (this.y < (this.canvas.height - this.height - 5)) {
 			this.y += this.playerSpeed;
             if (frameCounter % 4 ===0){
-                this.image.src = "/assets/images/TanjiroPosition1DOWN.png";
+                this.image.src = "./assets/images/TanjiroPosition1DOWN.png";
                 } else {
-                this.image.src = "/assets/images/TanjiroPosition2DOWN.png";
+                this.image.src = "./assets/images/TanjiroPosition2DOWN.png";
                 }
 		}
 	}
