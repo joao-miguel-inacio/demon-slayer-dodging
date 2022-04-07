@@ -21,7 +21,6 @@ function gameWon(){
     slayAgaintButton.style = "position: absolute; top: 85%;";
     woundsButton.style = "position: absolute; top: 80%;";
     slayAgaintButton.addEventListener('click', startGame );
-
-    //let backToStart = () => location.reload();
+    
     woundsButton.addEventListener('click', backToStart );
 }

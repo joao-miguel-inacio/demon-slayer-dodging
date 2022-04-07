@@ -32,6 +32,6 @@ function playLostScreenMusic(){
 }
 
 function AttackMusic(){
-    attackMusic.playbackRate = 3;
+    attackMusic.playbackRate = 2;
     attackMusic.play();
 }
