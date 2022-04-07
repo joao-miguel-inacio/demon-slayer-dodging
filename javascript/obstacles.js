@@ -4,8 +4,8 @@ class Obstacles {
 		this.ctx = ctx;
 		this.image = null;
         this.obstaclesSpeed = 10;
-        this.width = 100;
-		this.height = 100;
+        this.width = 60;
+		this.height = 60;
         this.y = enemy.y;
 		this.x = canvas.width-150;
         this.init();
@@ -40,9 +40,9 @@ class Obstacles {
 class Obstacles1 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 4;
-        this.width = 100;
-		this.height = 100;
+        this.obstaclesSpeed = 12;
+        this.width = 60;
+		this.height = 60;
         this.y = enemy.y;
 		this.x = canvas.width-150;
         this.init();
@@ -52,9 +52,9 @@ class Obstacles1 extends Obstacles {
 class Obstacles2 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 4;
-        this.width = 100;
-		this.height = 100;
+        this.obstaclesSpeed = 14;
+        this.width = 60;
+		this.height = 60;
         this.y = enemy.y;
 		this.x = canvas.width-150;
         this.init();
@@ -64,9 +64,9 @@ class Obstacles2 extends Obstacles {
 class Obstacles3 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 4;
-        this.width = 100;
-		this.height = 100;
+        this.obstaclesSpeed = 16;
+        this.width = 60;
+		this.height = 60;
         this.y = enemy.y;
 		this.x = canvas.width-150;
         this.init();

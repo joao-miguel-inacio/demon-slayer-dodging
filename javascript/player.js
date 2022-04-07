@@ -4,8 +4,8 @@ class Player {
 		this.ctx = ctx;
 		this.image = null;
         this.playerSpeed = 15;
-        this.width = 100;
-		this.height = 100;
+        this.width = 80;
+		this.height = 80;
         this.y = (this.canvas.height - this.height) / 2;
 		this.x = (10);
         this.init();
