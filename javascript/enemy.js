@@ -25,6 +25,7 @@ class Enemy {
     }
 
     clearY(){
+        console.log(this.movingInterval)
         clearInterval(this.movingInterval);
     }
 

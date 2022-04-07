@@ -40,7 +40,7 @@ class Obstacles {
 class Obstacles1 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 12;
+        this.obstaclesSpeed = 4;
         this.width = 100;
 		this.height = 100;
         this.y = enemy.y;
@@ -52,7 +52,7 @@ class Obstacles1 extends Obstacles {
 class Obstacles2 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 14;
+        this.obstaclesSpeed = 4;
         this.width = 100;
 		this.height = 100;
         this.y = enemy.y;
@@ -64,7 +64,7 @@ class Obstacles2 extends Obstacles {
 class Obstacles3 extends Obstacles {
     constructor (canvas, ctx) {
         super(canvas,ctx);
-        this.obstaclesSpeed = 16;
+        this.obstaclesSpeed = 4;
         this.width = 100;
 		this.height = 100;
         this.y = enemy.y;
