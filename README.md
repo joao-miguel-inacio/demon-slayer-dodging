@@ -2,17 +2,21 @@
 
 IronHack Project 1 - [Game](https://joaomiguelinacio.github.io/demon-slayer-dodging/)
 
+![](./assets/images/read-me-screen1.png)
+
 ## Introduction :japanese_goblin:
 
 5 weeks into the IronHack Web Development we were asked to develop a game to showcase what we had learnt about HTML, CSS and Javascript. :face_with_spiral_eyes:
 
-A few weeks had passed since the last Demon Slayer Episode aired and I couldn't miss this opportunity to dive back into it! :nerd_face:
+A few weeks had passed since the last Demon Slayer Episode aired and I couldn't miss this opportunity to dive back into it!
 
 # Gameplay :exploding_head:
 
-We will revisit the last fight of the entertainment district arc of Demon Slayer against Gyutaro. :star_struck:
+We will revisit the last fight of the Entertainment District Arc of Demon Slayer, against Gyutaro. :star_struck:
 
 In the game, we will have to avoid the obstacles thrown at us (The Flying Blood Sickles) and move towards the enemy until he is within the range of our attack.
+
+![](./assets/images/read-me-game-board.png)
 
 As cool as it is to just watch the attack effect or to hear the slashing sound of our katana, attacking outside the range will have no pratical effect. 
 
@@ -46,6 +50,13 @@ We will be fighting Gyutaro, one of the twelve Kizuki! I also tried drawing him 
 
 The enemy will move randomly on the y axis every 30 frames and fires obstacles from wherever he is.
 
+```
+move(){
+        enemy.y = Math.floor(Math.random()*(this.canvas.height - this.height));
+    }
+```
+
+
 ## Obstacles :drop_of_blood:
 
 The obstacles will move towards you at different speeds and will be throw at you in different intervals depending on which level you are! :zap:
@@ -64,6 +75,7 @@ Every time you collide with an obstacle you loose a life and you lose the game i
 
 Bear in mind that you are so determined to fight the evil that you will keep fighting for another turn even after everything seemed lost! :fire:
 
+![](./assets/images/read-me-screen2.png)
 
 ## Gyutaro's Lives and Levels logic :heart:
 
@@ -92,18 +104,28 @@ function playerAttacksSuccessfully(){
         });
     }
 }
+
 //the increase difficulty function pushes some text into the difficulty1Array which was empty
 function increaseDifficulty1() {
     difficulty1Array.push("difficulty1");
 }
+
 function update (){ 
     ...
-    //as there is smth in the difficulty1Array the function update starts throwing a faster type of obstacles
+    //as difficulty1Array is no longer empty the enemy throws a faster type of obstacles
     if (frameCounter % 70 === 0 && difficulty1Array.length >= 1){
                 obstaclesArray.push(new Obstacles1(canvas, ctx));
     }
 }
 ```
+
+![](./assets/images/read-me-screen3.png)
+
+You will have to play and win to see the 4min long reward at the end! 
+
+## SPOILER ALERT :
+
+DO NOT PLAY THE VIDEO if you haven't watched the anime YET!
 
 ## Thank you :bowing_man:
 @[Ian](https://github.com/idelace) 's son for choosing such an amazing name and being so enthusiastic about the game!
