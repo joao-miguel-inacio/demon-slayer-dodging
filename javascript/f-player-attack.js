@@ -36,7 +36,7 @@ function playerAttackAnimation (){
 function playerAttacksSuccessfully(){
     if (enemyLifesArray.length===1){
         document.addEventListener('keydown', (e) => {
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
+            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();
@@ -46,7 +46,7 @@ function playerAttacksSuccessfully(){
     }
     if (enemyLifesArray.length===2) {
         document.addEventListener('keydown', (e) => {
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
+            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();       
@@ -57,7 +57,7 @@ function playerAttacksSuccessfully(){
     }
     if (enemyLifesArray.length===3) {
         document.addEventListener('keydown', (e) => {
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
+            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    
@@ -68,7 +68,7 @@ function playerAttacksSuccessfully(){
     }
     if (enemyLifesArray.length===4){
         document.addEventListener('keydown', (e) => {
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
+            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    

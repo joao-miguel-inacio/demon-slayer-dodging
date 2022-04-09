@@ -111,7 +111,7 @@ function update (){
                     gameLost ();        
             }
         });
-        if ((player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
+        if ((player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
             openingThread();
             playerAttacksSuccessfully();
         }
