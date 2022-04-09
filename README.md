@@ -1,4 +1,4 @@
-# Demon Slayer Dodging :drop_of_blood:
+# Demon Slayer Dodging :izakaya_lantern:
 
 IronHack Project 1 - [Game](https://joaomiguelinacio.github.io/demon-slayer-dodging/)
 
@@ -21,7 +21,7 @@ As cool as it is to just watch the attack effect or to hear the slashing sound o
 ## Player :smiling_face_with_three_hearts:
 ![Tanjiro](./assets/images/read-me-tanjiro.png)
 
-We will be playing as Tanjiro Kamado! After trying to draw different stances on paint for what felt like 1/2 days, @[Flow-fly](https://github.com/Flow-Fly) introduced me to sprites. Talk about game changer! :sunglasses:
+We will be playing as Tanjiro Kamado! After trying to draw different stances on paint for what felt like 1-2 days, @[Flow-fly](https://github.com/Flow-Fly) introduced me to sprites. Talk about game changer! :sunglasses:
 
 Using the arrow keys and W, S, A, D we will be able to control Tanjiro's movement and we will be using our frameCounter to animate our movement.
 
@@ -104,3 +104,10 @@ function update (){
     }
 }
 ```
+
+## Thank you :bowing_man:
+@[Ian](https://github.com/idelace) 's son for choosing such an amazing name and being so enthusiastic about the game!
+
+@[Nelson](https://github.com/nlfonseca) and @[Ana](https://github.com/anaresende) for your unvaluable tips and advice!
+
+@[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
