@@ -18,7 +18,8 @@ function pauseMusic(){
 }
 
 let music,
-    attackMusic = new Audio('./assets/music/Attack.mp3');
+    attackMusic = new Audio('./assets/music/Attack.mp3'),
+    wowMusic = new Audio('./assets/music/Wow.mp3');
 
 function playFirstScreenMusic(){
     music = new Audio ('./assets/music/Start.mp3');
