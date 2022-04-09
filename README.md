@@ -144,10 +144,10 @@ Because life at work can't wait, this will have to:
 
     12934. Make game Mobile Ready.
 
-## Dataset :nerdface:
+## Dataset :nerd_face:
 
  |-- .assets
- 
+
     |-- .fonts 
 
     |-- .images
