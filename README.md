@@ -190,7 +190,7 @@ Because work can't wait, this will have to:
 
         (contains playerMovesAndAttacks function)
 
-        (IF YOU HAVEN'T YET, DEF VISIT [f-moves-and-attacks.js](https://github.com/joaoMiguelInacio/demon-slayer-dodging/blob/main/javascript/f-moves-and-attacks.js).)
+        (IF YOU HAVEN'T YET, DEF VISIT THIS FILE)
 
         (contains playerRests function)
 
