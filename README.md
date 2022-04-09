@@ -42,7 +42,7 @@ moveUp() {
 }
 ```
 
-The attack animation is defined differently but more on that @[player-attack.js](https://github.com/joaoMiguelInacio/demon-slayer-dodging/blob/main/javascript/player-attack.js).
+The attack animation is defined differently but more on that @[f-moves-and-attacks.js](https://github.com/joaoMiguelInacio/demon-slayer-dodging/blob/main/javascript/f-moves-and-attacks.js).
 
 ## Enemy :zombie:
 
@@ -182,7 +182,19 @@ Because work can't wait, this will have to:
 
         (contains enemyLosingLife function)
 
-    |-- f-player.moves.js (contains GlobalEventHandles that determine how the player moves)
+    |-- f-player.moves.js 
+
+        (contains backToOriginalStance function)
+
+        (contains playerAttackAnimation function)
+
+        (contains playerMovesAndAttacks function)
+
+        (IF YOU HAVEN'T YET, DEF VISIT [f-moves-and-attacks.js](https://github.com/joaoMiguelInacio/demon-slayer-dodging/blob/main/javascript/f-moves-and-attacks.js).)
+
+        (contains playerRests function)
+
+        (contains enemyLosingLife function)
 
     |-- f-refill.js (contains refillLifePoints function)
 
