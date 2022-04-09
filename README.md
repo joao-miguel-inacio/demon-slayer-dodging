@@ -1,6 +1,6 @@
 # Demon Slayer Dodging :cherry_blossom:
 
-IronHack Project 1 - [Game](https://joaomiguelinacio.github.io/demon-slayer-dodging/)
+IronHack Project 1 - [PLAY GAME](https://joaomiguelinacio.github.io/demon-slayer-dodging/)
 
 ![](./assets/images/read-me-screen1.png)
 
