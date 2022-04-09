@@ -46,7 +46,7 @@ function playerAttacksSuccessfully(){
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();        
                 enemyLosingLife3();
-                difficulty3Array.push("difficulty3");
+                difficultyArray.push("difficulty3");
                 obstaclesArray = [];
                 setTimeout(function() {
                     player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
@@ -67,7 +67,7 @@ function playerAttacksSuccessfully(){
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
                 enemyLosingLife2();
-                difficulty2Array.push("difficulty2");
+                difficultyArray.push("difficulty2");
                 obstaclesArray = [];
                 setTimeout(function() {
                     player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
@@ -88,7 +88,7 @@ function playerAttacksSuccessfully(){
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
                 enemyLosingLife1();
-                difficulty1Array.push("difficulty1");
+                difficultyArray.push("difficulty1");
                 obstaclesArray = [];
                 setTimeout(function() {
                     player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
