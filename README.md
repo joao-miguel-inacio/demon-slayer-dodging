@@ -165,9 +165,9 @@ Because work can't wait, this will have to:
 
         (contains enemyAttackAnimation function)
         
-        (contains enemyAttacksSuccessfully1/2/3 functions)
-
-    |-- f-life-points.js (contains enemyLosingLife1/2/3 functions)
+        (contains enemyAttacksSuccessfully function)
+        
+        (contains playerLosingLife function)
 
     |-- f-opening-thread.js (contains opening-thread function)
 
@@ -179,7 +179,9 @@ Because work can't wait, this will have to:
 
         (contains playerAttackAnimation function)
 
-        (contains playerAttacksSuccessfully1/2/3 functions)
+        (contains playerAttacksSuccessfully function)
+
+        (contains enemyLosingLife function)
 
     |-- f-player.moves.js (contains GlobalEventHandles that determine how the player moves)
 

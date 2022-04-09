@@ -47,11 +47,11 @@ function playerAttacksSuccessfully(){
     if (enemyLifesArray.length===2) {
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
-                e.preventDefault();        
+                e.preventDefault();
+                obstaclesArray = [];
+                playerAttackAnimation ();       
                 enemyLosingLife(3);
                 difficultyArray.push("difficulty3");
-                obstaclesArray = [];
-                playerAttackAnimation ();
             }
         });
     }
@@ -59,10 +59,10 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
-                enemyLosingLife(2);
-                difficultyArray.push("difficulty2");
                 obstaclesArray = [];
-                playerAttackAnimation ();      
+                playerAttackAnimation ();    
+                enemyLosingLife(2);
+                difficultyArray.push("difficulty2");  
             }
         });
     }
@@ -70,12 +70,31 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
-                enemyLosingLife(1);
-                difficultyArray.push("difficulty1");
                 obstaclesArray = [];
-                playerAttackAnimation ();
+                playerAttackAnimation ();    
+                enemyLosingLife(1);
+                difficultyArray.push("difficulty1"); 
             }
         });
+    }
+}
+
+function enemyLosingLife(i){
+    if (i===3){
+        enemyLifesArray.splice(1,1);
+        leveltxt.innerHTML = "Final Level";
+        enemyLife3.classList.add("hidden");
+        enemyLostLife3.classList.remove("hidden");
+    } else if (i===2){
+        enemyLifesArray.splice(2,1);
+        leveltxt.innerHTML = "Level 3";
+        enemyLife2.classList.add("hidden");
+        enemyLostLife2.classList.remove("hidden");
+    } else if (i===1){
+        enemyLifesArray.splice(3,1);
+        leveltxt.innerHTML = "Level 2";
+        enemyLife1.classList.add("hidden");
+        enemyLostLife1.classList.remove("hidden");
     }
 }
 

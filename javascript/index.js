@@ -102,11 +102,11 @@ function update (){
             const withinY = obstacle.y + obstacle.height > player.y && obstacle.y < player.y + player.height;
             attackSuffered = withinX && withinY;
             if(attackSuffered && playerLifesArray.length === 4){
-                enemyAttacksSuccessfully1();                 
+                enemyAttacksSuccessfully(1);                 
             } else if(attackSuffered && playerLifesArray.length === 3){
-                enemyAttacksSuccessfully2();    
+                enemyAttacksSuccessfully(2);    
             } else if(attackSuffered && playerLifesArray.length === 2){
-                enemyAttacksSuccessfully3 ();
+                enemyAttacksSuccessfully(3);
                 } else if(attackSuffered && playerLifesArray.length === 1){
                     gameLost ();        
             }
