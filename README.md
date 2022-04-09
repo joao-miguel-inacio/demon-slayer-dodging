@@ -161,7 +161,11 @@ Because work can't wait, this will have to:
 
     |-- extra.js 
 
-    |-- f-enemy-attacks.js (contains enemyAttacksSuccessfully1/2/3 functions)
+    |-- f-enemy-attacks.js 
+
+        (contains attackSufferedAnimation function)
+        
+        (contains enemyAttacksSuccessfully1/2/3 functions)
 
     |-- f-life-points.js (contains enemyLosingLife1/2/3 functions)
 
@@ -171,9 +175,13 @@ Because work can't wait, this will have to:
 
         (contains backToOriginalStance function)
 
+        (contains playerAttacksForNothing function)
+
+        (contains playerAttackAnimation function)
+
         (contains playerAttacksSuccessfully1/2/3 functions)
 
-        (contains playerAttacksForNothing function)
+       
 
     |-- f-player.moves.js (contains GlobalEventHandles that determine how the player moves)
 

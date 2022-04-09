@@ -9,6 +9,7 @@ function gameWon(){
     wonGameText.style.fontSize = "24px";
     wonGameText.style.padding = "2%";
     document.body.style.backgroundColor = "black";
+    footerElement.style.backgroundColor = "whitesmoke";
     
     //the following is to stay commented until I find a way to access the play video button
     /*music = new Audio('./assets/music/GameOver.mp3');

@@ -19,25 +19,28 @@ function playerAttacksForNothing () {
     });
 }
 
+function playerAttackAnimation (){
+    setTimeout(function() {
+        player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
+        footerElement.style.backgroundColor = "blue";
+        headerElement.style.backgroundColor = "blue"; 
+        setTimeout(function() {
+            player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
+            footerElement.style.backgroundColor = "whitesmoke";
+            headerElement.style.backgroundColor = "whitesmoke";
+            player.x = (10);    
+            }, 200);
+    }, 200);
+}
+
 function playerAttacksSuccessfully(){
     if (enemyLifesArray.length===1){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
                 obstaclesArray = [];
-                setTimeout(function() {
-                    player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
-                    footerElement.style.backgroundColor = "blue";
-                    headerElement.style.backgroundColor = "blue";
-                    setTimeout(function() {
-                        player.image.src = "./assets/images/TanjiroPosition2ATTACK.png";
-                        footerElement.style.backgroundColor = "whitesmoke";
-                        headerElement.style.backgroundColor = "whitesmoke";
-                        setTimeout(function() {        
-                            gameWon();
-                        }, 200);    
-                    }, 200);
-                }, 200);
+                playerAttackAnimation ();
+                setTimeout(gameWon, 600);    
             }                       
         });
     }
@@ -48,17 +51,7 @@ function playerAttacksSuccessfully(){
                 enemyLosingLife3();
                 difficultyArray.push("difficulty3");
                 obstaclesArray = [];
-                setTimeout(function() {
-                    player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
-                    footerElement.style.backgroundColor = "blue";
-                    headerElement.style.backgroundColor = "blue";
-                    setTimeout(function() {
-                        player.image.src = "./assets/images/TanjiroPosition2ATTACK.png";
-                        footerElement.style.backgroundColor = "whitesmoke";
-                        headerElement.style.backgroundColor = "whitesmoke";
-                        player.x = (10);
-                    }, 200);
-                }, 200);            
+                playerAttackAnimation ();
             }
         });
     }
@@ -69,17 +62,7 @@ function playerAttacksSuccessfully(){
                 enemyLosingLife2();
                 difficultyArray.push("difficulty2");
                 obstaclesArray = [];
-                setTimeout(function() {
-                    player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
-                    footerElement.style.backgroundColor = "blue";
-                    headerElement.style.backgroundColor = "blue";
-                    setTimeout(function() {
-                        player.image.src = "./assets/images/TanjiroPosition2ATTACK.png";
-                        footerElement.style.backgroundColor = "whitesmoke";
-                        headerElement.style.backgroundColor = "whitesmoke";
-                        player.x = (10);
-                    }, 200);
-                }, 200);        
+                playerAttackAnimation ();      
             }
         });
     }
@@ -90,17 +73,7 @@ function playerAttacksSuccessfully(){
                 enemyLosingLife1();
                 difficultyArray.push("difficulty1");
                 obstaclesArray = [];
-                setTimeout(function() {
-                    player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
-                    footerElement.style.backgroundColor = "blue";
-                    headerElement.style.backgroundColor = "blue"; 
-                    setTimeout(function() {
-                        player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
-                        footerElement.style.backgroundColor = "whitesmoke";
-                        headerElement.style.backgroundColor = "whitesmoke";
-                        player.x = (10);    
-                        }, 200);
-                }, 200);
+                playerAttackAnimation ();
             }
         });
     }
