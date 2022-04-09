@@ -163,7 +163,7 @@ Because work can't wait, this will have to:
 
     |-- f-enemy-attacks.js 
 
-        (contains attackSufferedAnimation function)
+        (contains enemyAttackAnimation function)
         
         (contains enemyAttacksSuccessfully1/2/3 functions)
 
@@ -180,8 +180,6 @@ Because work can't wait, this will have to:
         (contains playerAttackAnimation function)
 
         (contains playerAttacksSuccessfully1/2/3 functions)
-
-       
 
     |-- f-player.moves.js (contains GlobalEventHandles that determine how the player moves)
 
