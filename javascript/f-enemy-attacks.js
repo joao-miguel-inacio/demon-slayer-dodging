@@ -1,4 +1,4 @@
-function playerAttackAnimation (){
+function enemyAttackAnimation (){
     setTimeout(function() {
         footerElement.style.backgroundColor = "red";
         headerElement.style.backgroundColor = "red";
@@ -9,23 +9,23 @@ function playerAttackAnimation (){
     }, 200);
 }
 
-function enemyAttacksSuccessfully1 () {    
+function enemyAttacksSuccessfully1 () {
     obstaclesArray = [];
     player.x = (10);
-    playerLosingLife1();
-    playerAttackAnimation () ();
+    playerLosingLife(1);
+    enemyAttackAnimation ();
 }
 
-function enemyAttacksSuccessfully2 () {    
+function enemyAttacksSuccessfully2 () {
     obstaclesArray = [];
     player.x = (10);
-    playerLosingLife2();
-    playerAttackAnimation () ();
+    playerLosingLife(2);
+    enemyAttackAnimation ();
 }
 
 function enemyAttacksSuccessfully3 (){
     obstaclesArray = [];
     player.x = (10);
-    playerLosingLife3();
-    playerAttackAnimation () ();   
+    playerLosingLife(3);
+    enemyAttackAnimation();   
 }

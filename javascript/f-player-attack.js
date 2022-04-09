@@ -48,7 +48,7 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();        
-                enemyLosingLife3();
+                enemyLosingLife(3);
                 difficultyArray.push("difficulty3");
                 obstaclesArray = [];
                 playerAttackAnimation ();
@@ -59,7 +59,7 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
-                enemyLosingLife2();
+                enemyLosingLife(2);
                 difficultyArray.push("difficulty2");
                 obstaclesArray = [];
                 playerAttackAnimation ();      
@@ -70,7 +70,7 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
                 e.preventDefault();
-                enemyLosingLife1();
+                enemyLosingLife(1);
                 difficultyArray.push("difficulty1");
                 obstaclesArray = [];
                 playerAttackAnimation ();
