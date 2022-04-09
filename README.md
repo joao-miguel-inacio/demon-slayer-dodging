@@ -1,4 +1,4 @@
-# Demon Slayer Dodging :izakaya_lantern:
+# Demon Slayer Dodging :cherry_blossom:
 
 IronHack Project 1 - [Game](https://joaomiguelinacio.github.io/demon-slayer-dodging/)
 
@@ -25,7 +25,7 @@ As cool as it is to just watch the attack effect or to hear the slashing sound o
 ## Player :smiling_face_with_three_hearts:
 ![Tanjiro](./assets/images/read-me-tanjiro.png)
 
-We will be playing as Tanjiro Kamado! After trying to draw different stances on paint for what felt like 1-2 days, @[Flow-fly](https://github.com/Flow-Fly) introduced me to sprites. Talk about game changer! :sunglasses:
+We will be playing as Tanjiro Kamado! After trying to draw different stances on paint for what felt like 1-2 days, @[Flow-fly](https://github.com/Flow-Fly) introduced me to sprites. Talk about game changer! Merci! :sunglasses:
 
 Using the arrow keys and W, S, A, D we will be able to control Tanjiro's movement and we will be using our frameCounter to animate our movement.
 
@@ -46,7 +46,7 @@ The attack animation is defined differently but more on that @[player-attack.js]
 
 ## Enemy :zombie:
 
-We will be fighting Gyutaro, one of the twelve Kizuki! I also tried drawing him from scratch using paint but then @[Ines Herminio](https://github.com/inesherminio) told me he looked like he was drinking coffee and that is when I thought I should change it. :rofl:
+We will be fighting Gyutaro, one of the twelve Kizuki! I also tried drawing him from scratch using paint but then @[Ines Herminio](https://github.com/inesherminio) told me he looked like he was drinking coffee and that is when I thought I should change it. Obrigado! :rofl:
 
 The enemy will move randomly on the y axis every 30 frames and fires obstacles from wherever he is.
 
@@ -69,7 +69,7 @@ The obstacles will move towards you at different speeds and will be throw at you
 
 #Final Level all before and: Objects thrown every 340 frammes @ Speed of 16
 
-Thank you @[Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
+Gracias @[Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
 
 ## Tanjiro's Lives logic :blue_heart: 
 
@@ -127,22 +127,15 @@ function update (){
 
 DO NOT PLAY THE VIDEO if you haven't watched the anime YET!
 
-## Thank you :bowing_man:
-@[Ian](https://github.com/idelace)'s son for choosing such an amazing name and being so enthusiastic about the game!
-
-@[Nelson](https://github.com/nlfonseca) and @[Ana](https://github.com/anaresende) for your unvaluable tips and advice!
-
-@[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
-
 ## Backlog :hospital:
 
 Because work can't wait, this will have to:
     
-    1. Find a way to isolate Vimeo's video play button, addEventListener and create dim lights function (that would turn background from white to black and stop music when video starts);
+1) Find a way to isolate Vimeo's video play button, addEventListener and create dim lights function (that would turn background from white to black and stop music when video starts);
 
-    2. Make Zenitsu a playable character. He is already everyone's favourite! :zap:
+2) Make Zenitsu a playable character. He is already everyone's favourite! :zap:
 
-    3. Create a multiplayer version of the game where Gyutaro stands in the middle of the canvas and throws objects towards Tanjiro on the left and Zenitsu on the right. Player A would use A,W,S,D to move and Player B would use the arrow keys.
+3) Create a multiplayer version of the game where Gyutaro stands in the middle of the canvas and throws objects towards Tanjiro on the left and Zenitsu on the right. Player A would use A,W,S,D to move and Player B would use the arrow keys.
 
     12934. Make game Mobile Ready.
 
@@ -221,3 +214,10 @@ Because work can't wait, this will have to:
  |-- index.html
 
  |-- README.md
+
+## Thank you :bowing_man:
+@[Ian](https://github.com/idelace)'s son for choosing such an amazing name and being so enthusiastic about the game!
+
+@[Nelson](https://github.com/nlfonseca) and @[Ana](https://github.com/anaresende) for your unvaluable tips and advice!
+
+@[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
