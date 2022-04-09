@@ -44,7 +44,9 @@ let intervalId,
     wonGameText = document.getElementById("won-game-text"),
     video = document.getElementById("fight-replay");
 
-let backToStart = () => location.reload();    
+function backToStart () {
+    location.reload();
+}  
 
 startButton.addEventListener('click', startGame);
 

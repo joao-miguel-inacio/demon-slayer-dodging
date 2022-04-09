@@ -6,6 +6,7 @@ function gameLost(){
     playLostScreenMusic();
     
     document.body.style.backgroundColor = "black";
+    footerElement.style.backgroundColor = "whitesmoke";
     lostGameText.style.padding = "10%";
     lostGameText.style.fontSize = "48px";
     tryAgainButton.addEventListener('click', startGame );

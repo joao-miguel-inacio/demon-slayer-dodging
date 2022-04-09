@@ -8,8 +8,8 @@ function enemyAttacksSuccessfully1 () {
         setTimeout(function() {
             footerElement.style.backgroundColor = "whitesmoke";
             headerElement.style.backgroundColor = "whitesmoke";
-        }, 100); 
-    }, 100);
+        }, 200); 
+    }, 200);
 }
 
 function enemyAttacksSuccessfully2 () {    
@@ -22,8 +22,8 @@ function enemyAttacksSuccessfully2 () {
         setTimeout(function() {
         footerElement.style.backgroundColor = "whitesmoke";
         headerElement.style.backgroundColor = "whitesmoke";
-        }, 100); 
-    }, 100);
+        }, 200); 
+    }, 200);
 }
 
 function enemyAttacksSuccessfully3 (){
@@ -36,6 +36,6 @@ function enemyAttacksSuccessfully3 (){
         setTimeout(function() {
         footerElement.style.backgroundColor = "whitesmoke";
         headerElement.style.backgroundColor = "whitesmoke";
-        }, 100); 
-    }, 100);   
+        }, 200); 
+    }, 200);   
 }

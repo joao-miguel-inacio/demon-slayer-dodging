@@ -71,7 +71,7 @@ The obstacles will move towards you at different speeds and will be throw at you
 
 Gracias @[Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
 
-## Tanjiro's Lives logic :blue_heart: 
+## Tanjiro's Lives logic :heart: 
 
 Every time you collide with an obstacle you loose a life and you lose the game if your lifes are depleted.
 
@@ -79,7 +79,7 @@ Bear in mind that you are so determined to fight the evil that you will keep fig
 
 ![](./assets/images/read-me-screen2.png)
 
-## Gyutaro's Lives and Levels logic :heart:
+## Gyutaro's Lives and Levels logic :blue_heart:
 
 Your opponent will get more frustrated with every blow you deliver and increase the game level. :angry:
 
@@ -151,21 +151,35 @@ Because work can't wait, this will have to:
 
  |-- .javascript
 
-    |-- background.js (contains Background Class)
+    |-- c-background.js (contains Background Class)
 
-    |-- enemy-attacks.js (contains enemyAttacksSuccessfully1/2/3 functions)
+    |-- c- enemy.js (contains Enemy Class)
 
-    |-- enemy-life-points.js (contains enemyLosingLife1/2/3 functions)
+    |-- c-obstacle.js (contains all Obstacle Classes)
 
-    |-- enemy.js (contains Enemy Class)
-    
+    |-- player.js (contains Player Class)
+
     |-- extra.js 
 
-    |-- game-lost.js (contains gameLost function that changes to screen2 using DOM)
+    |-- f-enemy-attacks.js (contains enemyAttacksSuccessfully1/2/3 functions)
 
-    |-- game-won.js (contains gameWon function that changes to screen3 using DOM)
+    |-- f-life-points.js (contains enemyLosingLife1/2/3 functions)
 
-    |-- increase-difficulty.js (contains the difficulty defining functions)
+    |-- f-opening-thread.js (contains opening-thread function)
+
+    |-- f-player.attack.js
+
+        (contains backToOriginalStance function)
+
+        (contains playerAttacksSuccessfully1/2/3 functions)
+
+        (contains playerAttacksForNothing function)
+
+    |-- f-player.moves.js (contains GlobalEventHandles that determine how the player moves)
+
+    |-- f-refill.js (contains refillLifePoints function)
+
+    |-- f-reset.js (contains reset function)
 
     |-- index.js 
 
@@ -175,35 +189,21 @@ Because work can't wait, this will have to:
 
         (and contains startGame and updateFunction)
 
-    |-- obstacle.js (contains all Obstacle Classes)
+    |-- screen2-lost.js (contains gameLost function that changes to screen2 using DOM)
 
-    |-- opening-thread.js (contains opening-thread function)
-
-    |-- player.attack.js
-
-        (contains backToOriginalStance function)
-
-        (contains playerAttacksSuccessfully1/2/3 functions)
-
-        (contains playerAttacksForNothing function)
-
-    |-- player-life-points.js (contains playerLosingLife1/2/3 functions)
-
-    |-- player.js (contains Player Class)
-
-    |-- reset.js (contains reset function)
+    |-- screen3-won.js (contains gameWon function that changes to screen3 using DOM)
 
     |-- sound-effects 
 
-        (contains playLostScreenMusic)
+        (contains playFirstScreenMusic function)
 
         (contains playFightScreenMusic function)
 
-        (contains playFirstScreenMusic function)
+        (contains playLostScreenMusic funtion)
 
         (contains AttackMusic function)
 
-        (contains musicON/OFF buttons addEventListeners)
+        (contains musicON/OFF buttons EventListeners)
 
         (contains musicON/OFF functions)
 
