@@ -59,7 +59,7 @@ move(){
 
 ## Obstacles :drop_of_blood:
 
-The obstacles will move towards you at different speeds and will be throw at you in different intervals depending on which level you are! :zap:
+The obstacles will move towards you at different speeds and will be throw at you in different intervals depending on which level you are! :collision:
 
 #Level 1: Objects thrown every 30 frammes @ Speed of 10
 
@@ -121,15 +121,65 @@ function update (){
 
 ![](./assets/images/read-me-screen3.png)
 
-You will have to play and win to see the 4min long reward at the end! 
-
-## SPOILER ALERT :
+## SPOILER ALERT :heavy_exclamation_mark:
 
 DO NOT PLAY THE VIDEO if you haven't watched the anime YET!
 
 ## Thank you :bowing_man:
-@[Ian](https://github.com/idelace) 's son for choosing such an amazing name and being so enthusiastic about the game!
+@[Ian](https://github.com/idelace)'s son for choosing such an amazing name and being so enthusiastic about the game!
 
 @[Nelson](https://github.com/nlfonseca) and @[Ana](https://github.com/anaresende) for your unvaluable tips and advice!
 
 @[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
+
+## Backlog :hospital:
+
+Because life at work can't wait, this will have to:
+    
+    1. Find a way to isolate Vimeo's video play button, addEventListener and create dim lights function (that would turn background from white to black and stop music when video starts);
+
+    2. Make Zenitsu a playable character. He is already everyone's favourite! :zap:
+
+    3. Create a multiplayer version of the game where Gyutaro stands in the middle of the canvas and throws objects towards Tanjiro on the left and Zenitsu on the right. Player A would use A,W,S,D to move and Player B would use the arrow keys.
+
+    12934. Make game Mobile Ready.
+
+## Dataset :nerdface:
+
+ |-- .assets
+    |-- .fonts 
+    |-- .images
+    |-- .music
+ |-- .javascript
+    |-- background.js (contains Background Class)
+    |-- enemy-attacks.js (contains enemyAttacksSuccessfully1/2/3 functions)
+    |-- enemy-life-points.js (contains enemyLosingLife1/2/3 functions)
+    |-- enemy.js (contains Enemy Class)
+    |-- extra.js 
+    |-- game-lost.js (contains gameLost function that changes to screen2 using DOM)
+    |-- game-won.js (contains gameWon function that changes to screen3 using DOM)
+    |-- increase-difficulty.js (contains the difficulty defining functions)
+    |-- index.js 
+        (initiates 95% of the variables in use)
+        (contains startButton addEventListener)
+        (and contains startGame and updateFunction)
+    |-- obstacle.js (contains all Obstacle Classes)
+    |-- opening-thread.js (contains opening-thread function)
+    |-- player.attack.js
+        (contains backToOriginalStance function)
+        (contains playerAttacksSuccessfully1/2/3 functions)
+        (contains playerAttacksForNothing function)
+    |-- player-life-points.js (contains playerLosingLife1/2/3 functions)
+    |-- player.js (contains Player Class)
+    |-- reset.js (contains reset function)
+    |-- sound-effects 
+        (contains playLostScreenMusic)
+        (contains playFightScreenMusic function)
+        (contains playFirstScreenMusic function)
+        (contains AttackMusic function)
+        (contains musicON/OFF buttons addEventListeners)
+        (contains musicON/OFF functions)
+ |-- .styles
+    |--styles.css
+ |-- index.html
+ |-- README.md
