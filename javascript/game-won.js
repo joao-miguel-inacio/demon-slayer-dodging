@@ -1,7 +1,7 @@
 function gameWon(){
     pauseMusic();
     wowMusic.play();
-    setTimeout(wowMusic.play(),4000);
+    setTimeout(pauseMusic(),4000);
     gameBoardElement.classList.add("hidden");
     gameWonElement.classList.remove("hidden");
     reset();
