@@ -69,7 +69,7 @@ The obstacles will move towards you at different speeds and will be throw at you
 
 #Final Level all before and: Objects thrown every 340 frammes @ Speed of 16
 
-Thank you @![Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
+Thank you @[Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
 
 ## Tanjiro's Lives logic :blue_heart: 
 
