@@ -69,9 +69,9 @@ function startGame(){
     
     refillLifePoints();
     update ();  
-    playerAttacksForNothing ();
     playerMoves();
     playerRests ();
+    playerAttacksForNothing ();
 }
 
 function update (){ 
@@ -95,6 +95,7 @@ function update (){
             obstaclesArray.push(new Obstacles3(canvas, ctx));
             frameCounter = 0;
         }
+
         obstaclesArray.forEach((obstacle) => {
             obstacle.draw ();
             obstacle.move();
@@ -111,10 +112,13 @@ function update (){
                     gameLost ();        
             }
         });
+
         if ((player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
             openingThread();
             playerAttacksSuccessfully();
         }
+
         return frameCounter;
+
     },1000/30);
 }
