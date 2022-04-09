@@ -218,6 +218,6 @@ Because work can't wait, this will have to:
 ## Thank you :bowing_man:
 @[Ian](https://github.com/idelace)'s son for choosing such an amazing name and being so enthusiastic about the game!
 
-@[Nelson](https://github.com/nlfonseca) and @[Ana](https://github.com/anaresende) for your unvaluable tips and advice!
+@[Ana](https://github.com/anaresende) and @[Nelson](https://github.com/nlfonseca) for your unvaluable tips and advice!
 
 @[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
