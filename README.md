@@ -106,15 +106,15 @@ function playerAttacksSuccessfully(){
     }
 }
 
-//the increase difficulty function pushes some text into the difficulty1Array which was empty
+//the increase difficulty function pushes difficulty1/2/3 into the difficultyArray
 function increaseDifficulty1() {
     difficulty1Array.push("difficulty1");
 }
 
 function update (){ 
     ...
-    //as difficulty1Array is no longer empty the enemy throws a faster type of obstacles
-    if (frameCounter % 70 === 0 && difficulty1Array.length >= 1){
+    //the update function checks if the difficultyArray contains difficulty1/2/3 and throws objects at the respective speed at the appropriate frame count
+    if (frameCounter % 70 === 0 && difficultyArray.includes("difficulty1")){
                 obstaclesArray.push(new Obstacles1(canvas, ctx));
     }
 }
