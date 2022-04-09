@@ -93,15 +93,14 @@ function playerAttacksSuccessfully(){
         document.addEventListener('keydown', (e) => {
             
             //and you press the space bar whilst having the enemy within your katana's range
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && ((player.y-enemy.y) <= 200)){
-                e.preventDefault();
-                
+            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
+                ...
+
                 //you will take one of his lifes
-                enemyLosingLife1();
+                enemyLosingLife(1);
                 
                 //and increase the game difficulty
-                increaseDifficulty1();
-                ...
+                difficultyArray.push("difficulty1");
             }
         });
     }
