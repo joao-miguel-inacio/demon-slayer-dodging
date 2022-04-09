@@ -147,39 +147,75 @@ Because life at work can't wait, this will have to:
 ## Dataset :nerdface:
 
  |-- .assets
+ 
     |-- .fonts 
+
     |-- .images
+
     |-- .music
+
  |-- .javascript
+
     |-- background.js (contains Background Class)
+
     |-- enemy-attacks.js (contains enemyAttacksSuccessfully1/2/3 functions)
+
     |-- enemy-life-points.js (contains enemyLosingLife1/2/3 functions)
+
     |-- enemy.js (contains Enemy Class)
+    
     |-- extra.js 
+
     |-- game-lost.js (contains gameLost function that changes to screen2 using DOM)
+
     |-- game-won.js (contains gameWon function that changes to screen3 using DOM)
+
     |-- increase-difficulty.js (contains the difficulty defining functions)
+
     |-- index.js 
+
         (initiates 95% of the variables in use)
+
         (contains startButton addEventListener)
+
         (and contains startGame and updateFunction)
+
     |-- obstacle.js (contains all Obstacle Classes)
+
     |-- opening-thread.js (contains opening-thread function)
+
     |-- player.attack.js
+
         (contains backToOriginalStance function)
+
         (contains playerAttacksSuccessfully1/2/3 functions)
+
         (contains playerAttacksForNothing function)
+
     |-- player-life-points.js (contains playerLosingLife1/2/3 functions)
+
     |-- player.js (contains Player Class)
+
     |-- reset.js (contains reset function)
+
     |-- sound-effects 
+
         (contains playLostScreenMusic)
+
         (contains playFightScreenMusic function)
+
         (contains playFirstScreenMusic function)
+
         (contains AttackMusic function)
+
         (contains musicON/OFF buttons addEventListeners)
+
         (contains musicON/OFF functions)
+
  |-- .styles
+
     |--styles.css
+
  |-- index.html
+
  |-- README.md
