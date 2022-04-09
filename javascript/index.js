@@ -68,10 +68,10 @@ function startGame(){
     obstacles3 = new Obstacles3 (canvas,ctx);
     
     refillLifePoints();
-    playerMoves();
-    playerRests ();
     update ();  
     playerAttacksForNothing ();
+    playerMoves();
+    playerRests ();
 }
 
 function update (){ 
