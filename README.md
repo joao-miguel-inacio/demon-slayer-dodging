@@ -69,8 +69,6 @@ The obstacles will move towards you at different speeds and will be throw at you
 
 #Final Level all before and: Objects thrown every 340 frammes @ Speed of 16
 
-Gracias @[Diego](https://github.com/diegomendezp) for sorting out the re-start button so that we can enjoy this infinite loop of bloodshed!
-
 ## Tanjiro's Lives logic :heart: 
 
 Every time you collide with an obstacle you loose a life and you lose the game if your lifes are depleted.
@@ -78,6 +76,8 @@ Every time you collide with an obstacle you loose a life and you lose the game i
 Bear in mind that you are so determined to fight the evil that you will keep fighting for another turn even after everything seemed lost! :fire:
 
 ![](./assets/images/read-me-screen2.png)
+
+Gracias @[Diego](https://github.com/diegomendezp) for helping to sort out the re-start button so that we can try again!
 
 ## Gyutaro's Lives and Levels logic :blue_heart:
 
