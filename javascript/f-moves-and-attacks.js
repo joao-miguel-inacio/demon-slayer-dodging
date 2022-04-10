@@ -40,14 +40,12 @@ function playerMovesAndAttacks() {
                 player?.moveLeft();
                 break;
             case e.key === " " && enemyLifesArray.length===1 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
-                console.log(enemyLifesArray)
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();
                 setTimeout(gameWon, 600);
                 break;
             case e.key === " " && enemyLifesArray.length===2 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
-                console.log(enemyLifesArray)
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();       
@@ -55,7 +53,6 @@ function playerMovesAndAttacks() {
                 difficultyArray.push("difficulty3");
                 break;
             case e.key === " " && enemyLifesArray.length===3 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
-                console.log(enemyLifesArray)
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    
@@ -63,7 +60,6 @@ function playerMovesAndAttacks() {
                 difficultyArray.push("difficulty2");
                 break;
             case e.key === " " && enemyLifesArray.length===4 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
-                console.log(enemyLifesArray)
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    
@@ -71,7 +67,6 @@ function playerMovesAndAttacks() {
                 difficultyArray.push("difficulty1");
                 break;
             case e.key === " " && gameBoardElement.classList.contains("hidden") === false:
-                console.log("not working as it shouldnt")
                 e.preventDefault();
                 AttackMusic();
                 player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";

@@ -154,7 +154,7 @@ Because work can't wait, this will have to:
 
     |-- c- enemy.js (contains Enemy Class)
 
-    |-- c-obstacle.js (contains all Obstacle Classes)
+    |-- c-obstacle.js (contains Obstacles Class)
 
     |-- c-player.js (contains Player Class)
 

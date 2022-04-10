@@ -61,12 +61,8 @@ function startGame(){
     document.body.style.backgroundColor = "whitesmoke";
     background = new Background (canvas, ctx);
     player = new Player (canvas, ctx);
-    enemy = new Enemy (canvas,ctx);
-    obstacles = new Obstacles (canvas,ctx);
-    obstacles1 = new Obstacles1 (canvas,ctx);
-    obstacles2 = new Obstacles2 (canvas,ctx);
-    obstacles3 = new Obstacles3 (canvas,ctx);
-    
+    enemy = new Enemy (canvas, ctx);
+    obstacle = new Obstacles (canvas, ctx, 10);
     refillLifePoints();
     update ();  
     playerMovesAndAttacks();
@@ -82,16 +78,16 @@ function update (){
         
         if (frameCounter % 30=== 0){
             enemy.move ();
-            obstaclesArray.push(new Obstacles(canvas, ctx));
+            obstaclesArray.push(new Obstacles(canvas, ctx, 10));
         }        
-        if (frameCounter % 70 === 0 && difficultyArray.includes("difficulty1") >= 1){
-            obstaclesArray.push(new Obstacles1(canvas, ctx));
+        if (frameCounter % 70 === 0 && difficultyArray.includes("difficulty1")){
+            obstaclesArray.push(new Obstacles(canvas, ctx, 12));
         }
-        if (frameCounter % 160 === 0 && difficultyArray.includes("difficulty2") >= 1){
-            obstaclesArray.push(new Obstacles2(canvas, ctx));
+        if (frameCounter % 160 === 0 && difficultyArray.includes("difficulty2")){
+            obstaclesArray.push(new Obstacles(canvas, ctx, 14));
         }
         if (frameCounter % 340 === 0 && difficultyArray.includes("difficulty3")){
-            obstaclesArray.push(new Obstacles3(canvas, ctx));
+            obstaclesArray.push(new Obstacles(canvas, ctx, 16));
             frameCounter = 0;
         }
 
