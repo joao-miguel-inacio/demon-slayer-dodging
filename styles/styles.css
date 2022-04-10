@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Hiromisake';
-    src: url(/fonts/HIROMISAKERegular.woff2);
+    font-family: 'WestsacRegular';
+    src: url(./fonts/WestsacRegular.woff2);
 }
 
 *{
@@ -25,7 +25,8 @@ body {
 
 h1 {
     padding: 5%;
-    font-family: "Hiromisake" ;
+    font-family: "WestsacRegular" ;
+    font-weight: bold;
     color: aliceblue;
     text-align: center;
     font-size: 68px;
@@ -36,7 +37,8 @@ h1 {
 #slay-again-button,
 #back-to-start,
 #regroup {
-    font-family: "Hiromisake" ;
+    font-family: "WestsacRegular" ;
+    font-weight: bold;
     color: aliceblue;
     font-size: 28px;
     width: 100%;
@@ -55,7 +57,7 @@ h1 {
 }
 
 .left-half {
-    font-family: "Hiromisake" ;
+    font-family: "WestsacRegular" ;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -116,7 +118,8 @@ footer > button {
 
 #levels-container p{
     font-size: 24px;
-    font-family: "Hiromisake";
+    font-family: "WestsacRegular";
+    font-weight: bold;
     color: rgb(151, 16, 16);
 }
 
