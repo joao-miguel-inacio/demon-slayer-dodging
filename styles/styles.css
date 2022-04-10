@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'Bangers';
-    src: url(/styles/fonts/FingerPaint-Regular.ttf);
+    font-family: "Hiromisake";
+    src: url("/styles/fonts/HIROMISAKE.ttf") format('truetype'),
+         url("./fonts/HIROMISAKE.ttf") format('truetype'),
+         url("/styles/fonts/HIROMISAKE.woff2") format('woff2'),
+         url("./fonts/HIROMISAKE.woff2") format('woff2'),
+         url("/styles/fonts/HIROMISAKE.woff") format('woff'),
+         url("./fonts/HIROMISAKE.woff") format('woff');
 }
 
 *{
@@ -25,7 +30,7 @@ body {
 
 h1 {
     padding: 5%;
-    font-family: "Bangers" ;
+    font-family: 'Hiromisake';
     font-weight: bold;
     color: aliceblue;
     text-align: center;
@@ -37,7 +42,7 @@ h1 {
 #slay-again-button,
 #back-to-start,
 #regroup {
-    font-family: "Bangers" ;
+    font-family: 'Hiromisake';
     font-weight: bold;
     color: aliceblue;
     font-size: 28px;
@@ -57,7 +62,7 @@ h1 {
 }
 
 .left-half {
-    font-family: "Bangers" ;
+    font-family: 'Hiromisake';
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -118,7 +123,7 @@ footer > button {
 
 #levels-container p{
     font-size: 24px;
-    font-family: "WestsacRegular";
+    font-family: 'Hiromisake';
     font-weight: bold;
     color: rgb(151, 16, 16);
 }
