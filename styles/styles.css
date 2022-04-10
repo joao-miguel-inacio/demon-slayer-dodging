@@ -1,11 +1,6 @@
 @font-face {
-<<<<<<< HEAD
     font-family: 'Bangers';
     src: url(/styles/fonts/FingerPaint-Regular.ttf);
-=======
-    font-family: 'WestsacRegular';
-    src: url(/fonts/WestsacRegular.woff2);
->>>>>>> f46c6bd1b678b29e3a863405b9deebd79afcef14
 }
 
 *{
