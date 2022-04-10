@@ -3,6 +3,7 @@ function backToOrignalStance() {
 }
 
 function playerAttackAnimation (){
+    playAttackMusic();
     setTimeout(function() {
         player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
         footerElement.style.backgroundColor = "blue";
@@ -68,7 +69,7 @@ function playerMovesAndAttacks() {
                 break;
             case e.key === " " && gameBoardElement.classList.contains("hidden") === false:
                 e.preventDefault();
-                AttackMusic();
+                playAttackMusic();
                 player.image.src = "./assets/images/TanjiroPosition1ATTACK.png";
                 break;
             default:

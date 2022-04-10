@@ -51,7 +51,7 @@ function playLostScreenMusic(){
     playMusic();
 }
 
-function AttackMusic(){
+function playAttackMusic(){
     attackMusic.playbackRate = 2;
     attackMusic.play();
 }
