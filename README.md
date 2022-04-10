@@ -142,8 +142,6 @@ Because work can't wait, this will have to:
 
  |-- .assets
 
-    |-- .fonts 
-
     |-- .images
 
     |-- .music
@@ -228,7 +226,9 @@ Because work can't wait, this will have to:
 
  |-- .styles
 
-    |--styles.css
+    |-- .fonts 
+
+    |-- styles.css
 
  |-- index.html
 
