@@ -48,7 +48,7 @@ The attack animation is defined differently but more on that @[f-moves-and-attac
 
 We will be fighting Gyutaro, one of the twelve Kizuki! I also tried drawing him from scratch using paint but then @[Ines Herminio](https://github.com/inesherminio) told me he looked like he was drinking coffee and that is when I thought I should change it. Obrigado! :rofl:
 
-The enemy will move randomly on the y axis every 30 frames and fires obstacles from wherever he is.
+The enemy will move randomly on the y axis every 30 frames and will fire obstacles from wherever he is.
 
 ```
 move(){
@@ -86,37 +86,36 @@ Your opponent will get more frustrated with every blow you deliver and increase 
 You can see what happens when the enemy loses his first life point in the following Javascript snippet:
 
 ```
-function playerAttacksSuccessfully(){
-    
-    //if enemy has all lifes
-    if (enemyLifesArray.length===4){
-        document.addEventListener('keydown', (e) => {
-            
-            //and you press the space bar whilst having the enemy within your katana's range
-            if (e.key === " " && (player.x >= (canvas.width*0.7)) && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200)){
+function playerMovesAndAttacks() {
+    document.onkeydown =  (e) => {
+        switch (true) { 
+            ...
+            //if SpaceBar is pressed AND enemy has all lifes AND the enemy is within your katana's range
+            case e.key === " " && enemyLifesArray.length===4 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
                 ...
-
                 //you will take one of his lifes
                 enemyLosingLife(1);
                 
-                //and increase the game difficulty
+                //and increase the game difficulty by adding "difficulty1" into the difficultyArray
                 difficultyArray.push("difficulty1");
+                break;
+            ...
             }
         });
     }
 }
 
-//the increase difficulty function pushes difficulty1/2/3 into the difficultyArray
-function increaseDifficulty1() {
-    difficulty1Array.push("difficulty1");
-}
-
 function update (){ 
     ...
-    //the update function checks if the difficultyArray contains difficulty1/2/3 and throws objects at the respective speed at the appropriate frame count
-    if (frameCounter % 70 === 0 && difficultyArray.includes("difficulty1")){
-                obstaclesArray.push(new Obstacles1(canvas, ctx));
-    }
+    //the update function checks if the difficultyArray contains "difficulty1/2/3" and throws objects at the respective speed at the appropriate frame count
+        if (frameCounter % 30=== 0){
+            enemy.move ();
+            obstaclesArray.push(new Obstacles(canvas, ctx, 10));
+        }        
+        if (frameCounter % 70 === 0 && difficultyArray.includes("difficulty1")){
+            obstaclesArray.push(new Obstacles(canvas, ctx, 12));
+        }
+        ...
 }
 ```
 
@@ -237,6 +236,6 @@ Because work can't wait, this will have to:
 ## Thank you :bowing_man:
 @[Ian](https://github.com/idelace)'s son for choosing such an amazing name and being so enthusiastic about the game!
 
-@[Ana](https://github.com/anaresende) and @[Nelson](https://github.com/nlfonseca) for your unvaluable tips and advice!
+@[Ana](https://github.com/anaresende) and @[Nelson](https://github.com/nlfonseca) for your invaluable tips and advice!
 
 @[Helena Saborit](https://github.com/Helsinky91) for helping me stay focused in class!
