@@ -40,27 +40,27 @@ function playerMovesAndAttacks() {
                 e.preventDefault();
                 player?.moveLeft();
                 break;
-            case e.key === " " && enemyLifesArray.length===1 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
+            case e.key === " " && enemyLifesArray.length===1 && checkRangeToAttack():
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();
                 setTimeout(gameWon, 600);
                 break;
-            case e.key === " " && enemyLifesArray.length===2 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
+            case e.key === " " && enemyLifesArray.length===2 && checkRangeToAttack():
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();       
                 enemyLosingLife(3);
                 difficultyArray.push("difficulty3");
                 break;
-            case e.key === " " && enemyLifesArray.length===3 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
+            case e.key === " " && enemyLifesArray.length===3 && checkRangeToAttack():
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    
                 enemyLosingLife(2);
                 difficultyArray.push("difficulty2");
                 break;
-            case e.key === " " && enemyLifesArray.length===4 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
+            case e.key === " " && enemyLifesArray.length===4 && checkRangeToAttack():
                 e.preventDefault();
                 obstaclesArray = [];
                 playerAttackAnimation ();    

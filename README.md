@@ -91,7 +91,7 @@ function playerMovesAndAttacks() {
         switch (true) { 
             ...
             //if SpaceBar is pressed AND enemy has all lifes AND the enemy is within your katana's range
-            case e.key === " " && enemyLifesArray.length===4 && (player.x >= (canvas.width*0.7)) && (((player.y+40)-(enemy.y+50)) <= 200):
+            case e.key === " " && enemyLifesArray.length===4 && checkRangeToAttack ():
                 ...
                 //you will take one of his lifes
                 enemyLosingLife(1);
@@ -146,56 +146,60 @@ Because work can't wait, this will have to:
     |-- .music
 
  |-- .javascript
+    
+    |-- .classes
 
-    |-- c-background.js (contains Background Class)
+        |-- background.js (contains Background Class)
 
-    |-- c- enemy.js (contains Enemy Class)
+        |-- enemy.js (contains Enemy Class)
 
-    |-- c-obstacle.js (contains Obstacles Class)
+        |-- obstacle.js (contains Obstacles Class)
 
-    |-- c-player.js (contains Player Class)
+        |-- player.js (contains Player Class)
+
+    |-- .utils
+
+        |-- attack-range.js (constains checkRangeToAttack function)
+
+        |-- enemy-attacks.js 
+
+            (contains enemyAttackAnimation function)
+            
+            (contains enemyAttacksSuccessfully function)
+            
+            (contains playerLosingLife function)
+
+        |-- opening-thread.js (contains opening-thread function)
+
+        |-- player.attack.js
+
+            (contains backToOriginalStance function)
+
+            (contains playerAttacksForNothing function)
+
+            (contains playerAttackAnimation function)
+
+            (contains playerAttacksSuccessfully function)
+
+            (contains enemyLosingLife function)
+
+        |-- player.moves.js 
+
+            (contains backToOriginalStance function)
+
+            (contains playerAttackAnimation function)
+
+            (contains playerMovesAndAttacks function)
+
+            (contains playerRests function)
+
+            (contains enemyLosingLife function)
+
+        |-- refill.js (contains refillLifePoints function)
+
+        |-- reset.js (contains reset function)
 
     |-- extra.js 
-
-    |-- f-enemy-attacks.js 
-
-        (contains enemyAttackAnimation function)
-        
-        (contains enemyAttacksSuccessfully function)
-        
-        (contains playerLosingLife function)
-
-    |-- f-opening-thread.js (contains opening-thread function)
-
-    |-- f-player.attack.js
-
-        (contains backToOriginalStance function)
-
-        (contains playerAttacksForNothing function)
-
-        (contains playerAttackAnimation function)
-
-        (contains playerAttacksSuccessfully function)
-
-        (contains enemyLosingLife function)
-
-    |-- f-player.moves.js 
-
-        (contains backToOriginalStance function)
-
-        (contains playerAttackAnimation function)
-
-        (contains playerMovesAndAttacks function)
-
-        (IF YOU HAVEN'T YET, DEF VISIT THIS FILE)
-
-        (contains playerRests function)
-
-        (contains enemyLosingLife function)
-
-    |-- f-refill.js (contains refillLifePoints function)
-
-    |-- f-reset.js (contains reset function)
 
     |-- index.js 
 
