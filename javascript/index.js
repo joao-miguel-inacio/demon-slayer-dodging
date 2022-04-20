@@ -91,18 +91,7 @@ function update (){
         obstaclesArray.forEach((obstacle) => {
             obstacle.draw ();
             obstacle.move();
-            const withinX = player.x + player.width > obstacle.x && player.x < obstacle.x + obstacle.width;
-            const withinY = obstacle.y + obstacle.height > player.y && obstacle.y < player.y + player.height;
-            attackSuffered = withinX && withinY;
-            if(attackSuffered && playerLifesArray.length === 4){
-                enemyAttacksSuccessfully(1);                 
-            } else if(attackSuffered && playerLifesArray.length === 3){
-                enemyAttacksSuccessfully(2);    
-            } else if(attackSuffered && playerLifesArray.length === 2){
-                enemyAttacksSuccessfully(3);
-                } else if(attackSuffered && playerLifesArray.length === 1){
-                    gameLost ();        
-            }
+            obstacle.collide ();
         });
         
         if (checkRangeToAttack()){

@@ -56,7 +56,6 @@ move(){
     }
 ```
 
-
 ## Obstacles :drop_of_blood:
 
 The obstacles will move towards you at different speeds and will be throw at you in different intervals depending on which level you are! :collision:
@@ -74,6 +73,22 @@ The obstacles will move towards you at different speeds and will be throw at you
 Every time you collide with an obstacle you loose a life and you lose the game if your lifes are depleted.
 
 Bear in mind that you are so determined to fight the evil that you will keep fighting for another turn even after everything seemed lost! :fire:
+
+```
+class Obstacles { 
+    ...
+    collide(){
+        const withinX = player.x + player.width > this.x && player.x < obstacle.x + this.width;
+        const withinY = this.y + this.height > player.y && this.y < player.y + player.height;
+        const attackSuffered = withinX && withinY;
+        if (attackSuffered && playerLifesArray.length === 4){
+            enemyAttacksSuccessfully(1); 
+        }
+    ...
+    } else if(attackSuffered && playerLifesArray.length === 1){
+            gameLost ();        
+    }
+```
 
 ![](./assets/images/read-me-screen2.png)
 
